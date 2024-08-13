@@ -4,3 +4,60 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --bg-color: #fff;
+  --bg-image: 
+      repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --main-color: #000;
+  --main-font: "Inter-Variable";
+  --main-font-weight: 400;
+  --accent-font: "PressStart2P";
+  --accent-font-weight: 700;
+  --btn-color: #000;
+  --btn-color-disabled: #00000060;
+  --stroke-color: #fff;
+  --mix-blend-color: #fff;
+  --heart-fill: #f00;
+}
+
+:root.theme-dark {
+  --bg-color: #000;
+  --bg-image: 
+      repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px ),
+      linear-gradient(to bottom, #007f0c, #004306);
+  --main-color: #00CC14;
+  --main-font: "Inter-Variable";
+  --main-font-weight: 465;
+  --accent-font: "PressStart2P";
+  --accent-font-weight: 785;
+  --btn-color: #00CC14;
+  --btn-color-disabled: #00CC1460;
+  --stroke-color: #000;
+  --mix-blend-color: #00CC14;
+  --heart-fill: #f00;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+      --bg-color: #000;
+      --bg-image: 
+          repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px ),
+          repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px ),
+          linear-gradient(to bottom, #007f0c, #004306);
+      --main-color: #00CC14;
+      --main-font: "Inter-Variable";
+      --main-font-weight: 465;
+      --accent-font-weight: 785;
+      --accent-font: "PressStart2P";
+      --btn-color: #00CC14;
+      --btn-color-disabled: #00CC1460;
+      --stroke-color: #000;
+      --mix-blend-color: #00CC14;
+      --heart-fill: #f00;
+  }
+}
