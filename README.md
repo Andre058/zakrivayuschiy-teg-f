@@ -1,1 +1,1 @@
-git@github.com:Andre058/zakrivayuschiy-teg-f.git
+https://github.com/Andre058/zakrivayuschiy-teg-f.git
